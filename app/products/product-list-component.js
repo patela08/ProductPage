@@ -13,6 +13,7 @@ var ProductListComponet = (function () {
     function ProductListComponet() {
         this.pageTitle = "Product List";
         this.showImg = false;
+        this.listFilter = '';
         this.products = [
             {
                 "productId": 1,

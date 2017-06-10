@@ -8,6 +8,7 @@
     export class ProductListComponet{
         pageTitle: String = "Product List";
         showImg: boolean = false;
+        listFilter: String = '';
         products: any[] = [
                             {
                                 "productId": 1,

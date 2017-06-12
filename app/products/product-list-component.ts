@@ -1,15 +1,17 @@
     import { Component } from '@angular/core';
+    import { IProduct } from './product';
 
     @Component({
         selector: 'my-products' ,
-        templateUrl: 'app/products/product-list-component.html'
+        templateUrl: 'app/products/product-list-component.html',
+        styleUrls: ['app/products/css/product-list-component.css']
     })
 
     export class ProductListComponet{
         pageTitle: String = "Product List";
         showImg: boolean = false;
         listFilter: String = '';
-        products: any[] = [
+        products: IProduct[] = [
                             {
                                 "productId": 1,
                                 "productName": "Leaf Rake",

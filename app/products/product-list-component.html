@@ -39,7 +39,7 @@
                         <td>{{product.productName}}</td>
                         <td>{{product.productCode | lowercase}}</td>
                         <td>{{product.price | currency : 'USD' : 'true':'1.2-2'}}</td>
-                        <td>{{product.starRating}}</td>
+                        <td><star [rating] = "product.starRating" (starRating) = "onRatingClicked($event)"></star></td>
                     </tr>
                 </tbody>
             </table>
